@@ -12,8 +12,6 @@ RUN pip wheel --no-cache-dir --no-deps --wheel-dir /usr/src/wheels -r requiremen
 
 FROM python:3.8-slim as project
 
-EXPOSE 6000/tcp
-
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 
